@@ -534,6 +534,7 @@ header{
 
  }
 
+
  @media (max-width: 575px) {
     .base-baner{
          padding: 75px 80px;
@@ -549,91 +550,79 @@ header{
         text-align: right;
     }
     
-    .payment img{
-        display: none;
-    }
-
-    .payment-text{
-        justify-content: center;
-        text-align: center;
-        margin: 10px 13px 5px;
-        font-size: 15px;
-        /* padding: 50px; */
-    }
-
-    .payment-text p{
-        padding: 50px;
-    }
-
-    .payment-text h2{
-        justify-content: center;
-        text-align: center;
-    }
-
-    .khat-yek{
-        display: block;
-        height: 2px;
-        background-color: #303030;
-        margin-left: 80px;
-        margin-right: 80px;
-        margin-top: 35px;
-    }
-
-
-
-
- }
-
-
- @media (min-width: 1px) and (max-width: 570px){
-    .base-baner{
-         padding: 75px 80px;
-    }
-
-    .text-baner h1 , h2{
-        font-size: 1.4rem;
-        text-align: right;
-    }
-
-    .text-baner p{
-        font-size: .80rem;
-        text-align: right;
-    }
     
-    .payment img{
-        display: none;
-    }
+    
+   .payment img{
+    display: none;
+   }
+    
+
 
     .payment-text{
         justify-content: center;
         text-align: center;
-        margin: 10px 13px 5px;
-        font-size: 15px;
-        /* padding: 50px; */
+        font-size: 15px; 
+        width: 100vw;
     }
 
     .payment-text p{
         padding: 50px;
-    }
+    } 
 
     .payment-text h2{
         justify-content: center;
         text-align: center;
+    }  */
+
+
+    .attributes{
+        text-align: center;
     }
 
+    .items{
+
+            display: grid;
+            grid-template-columns: 1fr
+    }
+
+    .attributes{
+        background-color: #eee;
+        border-radius: 20px;
+
+    }
+
+    .first-item,.second-item,.third-item,.fourth-item{
+
+        border: none;
+
+        border-top: 1px solid black;
+
+    }
+
+
+
+
+    .difination p{
+        padding: 0px;
+        margin-top: 0;
+    }
+
+
     .khat-yek{
-        display: block;
         height: 2px;
         background-color: #303030;
         margin-left: 80px;
         margin-right: 80px;
-        margin-top: 35px;
     }
 
 
 
-
  }
+
+
+
+ 
+
 
 
 
