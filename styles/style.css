@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'iranyekanwebmedium' , Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 7px;
+    margin: auto;
+    width: 1170px;
+    background-color: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease ;
+}
+
+.logo{
+    margin: 11px 28px;
+}
+
+.ul-menu{
+    display: flex;
+    list-style: none;
+}
+
+.ul-menu li{
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+.ul-menu li a{
+    color: #303030;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ul-menu > li:last-child a{
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.6);
+    border-radius: 20px;
+    padding: 10px 17px;
+    font-family: 'YekanBakhbold';
+}
+
+.ul-menu > li:last-child a:hover{
+    background-color: #fbf6d9;
+}
+
+.more-menu img{
+    width: 8px;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.hamburger-menu{
+    position: fixed;
+    top: 0;
+    right: 0; background-color: white;
+    z-index: 100;
+    width: 100%;
+    font-family: 'YekanBakhMedium';
+    transform: translateY(-100%);
+}
+
+.cross-icon{
+    width: 100%;
+    text-align: left;
+    padding: 25px 0;
+}
+
+.cross-icon img{
+    width: 25px;
+    margin-left: 20px;
+
+}
+
+.hamburger-menu-item{
+    padding: 15px 30px;
+}
+
+.hamburger-menu-item ul{
+    list-style-type: none;
+}
+
+.hamburger-menu-item a{
+    text-decoration: none;
+    color: #303030;
+    display: inline-block;
+    padding: 5px 10px;
+    
+}
+
+.hamburger-menu-item div{
+    height: 1px;
+    background-color: black;
+    margin: 0 20px;
+}
+
+.more-item{
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    height: 50px;
+}
+
+.more-item a{
+    text-decoration: none;
+    color: #303030;
+    margin-right: 42px;
+}
+
+.show-hamburger-menu{
+    animation: fadeindown 0.40s forwards;
+}
+
+#show-more-menu{
+    position: relative;
+}
+
+#show-more-menu ul{
+    position: absolute;
+    display: none;
+    width: 123px;
+    top: o;
+    left: -35px;
+    background-color: aliceblue;
+    border-top: 7px solid rgb(255, 222, 140);
+    border-radius: 10px;
+}
+
+#show-more-menu li{
+    list-style-type: none;
+    padding: 9px 0;
+}
+
+#show-product-menu{
+    position: relative;
+}
+
+#show-product-menu ul{
+
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(2,auto);
+    width: 300px;
+    top: o;
+    left: -135px;
+    background-color: aliceblue;
+    border-top: 7px solid rgb(255, 222, 140);
+    border-radius: 10px;
+
+}
+
+#show-product-menu ul li{
+    list-style-type: none;
+    padding: 9px 0;
+
+}
+
+
+/* {
+
+
+                                                                                            پایان منو
+
+
+
+
+
+
+
+} */
+
+
+.base-baner{
+    width: 1020px;
+    padding: 20px 40px 10px;
+    background-image: linear-gradient(135deg, #21254e ,#2b4a83);
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text-baner{
+    width: 60%;
+}
+
+.text-baner p{
+    color: white;
+    font-weight: bolder;
+    margin-top: 5px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+
+.ax-baner{
+    width: 300px ;
+    margin: 0 auto;
+}
+
+
+.go-down{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 47px;
+}
+
+.go-down img{
+    width: 15px;
+    bottom:-25px;
+    left: -5px;
+    position: relative;
+}
+
+.go-down div{
+    background-image: url(../images/arrowbottom.svg);
+    width: 165px;
+    height: 75px;
+}
+
+.payment{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.payment img{
+    width: 450px;
+    height: 480px;
+}
+
+.payment-text{
+    width: 530px;
+    margin: 30px 0;
+}
+
+.payment-text h3{
+    color: #747480;
+    font-family: 'YekanBakhMedium';
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+.payment-text p{
+    margin-top: 10px;
+    line-height: 2.5rem;
+    font-weight: 300; 
+    
+}
+
+
+.link a{
+    background-color: rgb(197, 159, 54);
+    padding: 2px 35px;
+    margin: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: all .70s;
+}
+
+.link a:hover{
+    background-color: rgb(165, 153, 120);
+    box-shadow: 5px 5px 3px 4px black,
+    -5px -5px 2px 3px whitesmoke;
+    font-weight: 700;
+}
+
+#peyment-do{
+    margin-top: 20px;
+}
+
+.attributes{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.difination img{
+    width: 300px;
+    height: 300px;
+    margin: 20px 40px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}
+
+.item{
+    padding: 30px;
+}
+
+.item p{
+    line-height: 2rem;
+    margin-right: 7px;
+}
+
+
+
+.item img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.items .item div{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.first-item{
+    border-left: 1px solid rgba(116, 116, 116, 0.179);
+}
+
+.second-item{
+    border-bottom: 1px solid rgb(116, 116, 116,0.179);
+}
+
+.third-item{
+    border-top: 1px solid rgb(116, 116, 116,0.179);
+}
+
+.fourth-item{
+    border-right: 1px solid rgb(116, 116, 116,0.179);
+}
+
+
+
+
+
+@keyframes fadeindown {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+@media (max-width: 1200px){
+    header{
+        width: 990px;
+    }
+
+    .base-baner{
+        width: 900px;
+        padding: 20px 40px 60px;
+    }
+
+    .ax-baner{
+        width: 260px;
+    }
+
+    .payment{
+        width: 940px;
+    }
+
+    #last-img{
+        margin-left: 30px;
+    }
+
+    .attributes{
+        /* display: inline-block; */
+        width: 924px;
+        padding: 0 9px;
+        flex-direction: column;
+
+    }
+
+    .difination img{
+        display: none;
+    }
+
+    .difination p{
+        margin-top: 30px;
+        padding: 10px 15px;
+        line-height: 2rem;
+    }
+
+}
+
+@media (max-width: 990px){
+    header{
+        width: auto;
+        padding: 20px 60px;
+    }
+
+    .ul-menu > li:last-child{
+        display: none;
+    }
+
+    .ul-menu li{
+        margin: 0 10px;
+    }
+
+    .base-baner{
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .text-baner{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ax-baner{
+        display: none;
+    }
+
+    .payment{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-text{
+        justify-content: center;
+        text-align: center;
+    }
+
+    #card-right{
+        flex-direction: column-reverse;
+    }
+
+    .khat-yek{
+        height: 2px;
+        background-color: #303030;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .attributes{
+        width: auto;
+        padding: 10px 6px;
+    }
+
+    .difination{
+        padding: 20 78px;
+    }
+
+    
+}
+
+ @media (max-width: 768px){
+    .ul-menu{
+        display: none;
+    }
+
+    header{
+        padding: 10px;
+        width: auto ;
+    }
+
+    .hamburger-icon{
+        display: block;
+        margin-right: 3px;
+    }
+
+    .base-baner{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .payment img{
+        width: 480px;
+        height: 490px;
+    }
+
+    .khat-yek{
+        display: none;
+    }
+
+    #peyment-do{
+        margin-top: 25px;
+    }
+
+    .attributes{
+        text-align: center;
+    }
+
+    .difination p{
+        padding: 50px;
+        margin-top: 0;
+    }
+
+    .difination h3{
+        margin-top: 40px;
+    }
+
+
+ }
+
+ @media (max-width: 575px) {
+    .base-baner{
+         padding: 75px 80px;
+    }
+
+    .text-baner h1 , h2{
+        font-size: 1.4rem;
+        text-align: right;
+    }
+
+    .text-baner p{
+        font-size: .80rem;
+        text-align: right;
+    }
+    
+    .payment img{
+        display: none;
+    }
+
+    .payment-text{
+        justify-content: center;
+        text-align: center;
+        margin: 10px 13px 5px;
+        font-size: 15px;
+        /* padding: 50px; */
+    }
+
+    .payment-text p{
+        padding: 50px;
+    }
+
+    .payment-text h2{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .khat-yek{
+        display: block;
+        height: 2px;
+        background-color: #303030;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 35px;
+    }
+
+
+
+
+ }
+
+
+
