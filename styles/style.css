@@ -511,7 +511,10 @@ header{
     }
 
     .khat-yek{
-        display: none;
+        height: 2px;
+        background-color: #303030;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #peyment-do{
